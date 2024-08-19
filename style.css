@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    color: coral;
+    font-weight: 600;
+}
+
+.navbar a{
+    align-items: center;
+    align-content: center;
+    justify-content: center ;
+    /* background-color: aqua; */
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: 0.3s ease;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: coral;
+
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    /* background-image: url(pictures/ge.jpg); */
+}
+
+.content{
+    max-width: 800px;
+}
+
+.content h3{
+    font-size: 40px;
+    font-weight: 800;
+    color: coral;
+}
+
+.content p{
+    font-size: 16px;
+    margin: 25px 0 30px;
+    text-align: justify;
+    color: black;
+}
+.link a{
+    border: solid black 2px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+.link a:hover{
+    background-color: white;
+    color: coral;
+
+}
+.link a{
+    border: solid coral 2px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: coral;
+    color: white;
+}
+
+.imahe img{
+    margin-left: 60px;
+    border-radius: 30%;
+    width: 400px;
+    height: 400px;
+    box-shadow: grey 0px 30px 30px,
+    grey 0px -12px 30px, 
+    grey 0px 4px 6px, 
+    grey 0px 12px 13px, 
+    grey 0px -3px 5px;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10%;
+    gap: 8em;
+    /* background: url(pictures/ge.jpg); */
+}
+
+.abt img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: grey 0px 30px 30px,
+    grey 0px -12px 30px, 
+    grey 0px 4px 6px, 
+    grey 0px 12px 13px, 
+    grey 0px -3px 5px;
+    border-radius: 30%;
+}
+
+.abt-cont h2{
+    text-align: left;
+    color: Coral;
+    font-size: 40px;
+}
+
+.abt-cont {
+    color:black;
+    font-size: 18px;
+    margin: 2em;
+    text-align: justify;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2% 15% 3%;
+    gap: 5rem;
+    /* background-image: url(pictures/ge.jpg); */
+    
+}
+
+.card-proj h2{
+    text-align: center;
+    font-size: 40px;
+    color: coral;
+    margin-bottom: 0;
+
+} 
+
+.card{
+    padding: 10px 0;
+}
+
+
+.area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px grey,
+    0 10px 10px grey
+    ;
+}
+
+.box img{
+    /* max-height: 70vh; */
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+.contact h2{
+    text-align: center;
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
+    font-size: 40px;
+    color: coral;
+    
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 4% 0%  0%;
+    /* background: url(pictures/ge.jpg); */
+    
+}
+
+.contact form{
+    max-width: 35em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.contact form .input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contact form .input input,
+.contact form textarea{
+    width: 100%;
+    padding: .5em;
+    font-size: 15px;
+    color: black;
+    background: white;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    resize: none;
+}
+
+.btn-1{
+    background-color: coral;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    transform: scale(.8);
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+}
+
+.footer .socmed{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .socmed a{
+    font-size: 25px;
+    color: white;
+    border: solid 2px white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    align-content: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: ease 0.3s;
+}
+
+.footer .socmed a:hover{
+    background-color: white;
+    color: coral;
+
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
